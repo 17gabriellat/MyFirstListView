@@ -1,8 +1,10 @@
 package gabby.paba.myfirstlistview
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.GestureDetector
+import android.view.MenuItem
 import android.view.MotionEvent
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -12,21 +14,58 @@ import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
     var data = mutableListOf<String>()
+
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+//            insets
+//        }
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        drawerLayout = findViewById(R.id.drawer_layout)
+        val navView = findViewById<NavigationView>(R.id.nav_view)
+
+        toggle = ActionBarDrawerToggle(
+            this,
+            drawerLayout,
+            toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
+        )
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        navView.setNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.nav_home -> {
+                    drawerLayout.closeDrawers()
+                }
+                R.id.nav_bahan -> {
+                    val intent = Intent(this, Bahan::class.java)
+                    startActivity(intent)
+                }
+            }
+            drawerLayout.closeDrawers()
+            true
         }
 
         data.addAll(listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5"))
@@ -160,5 +199,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         builder.create().show()
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (toggle.onOptionsItemSelected(item)) {
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_bahan_nama">
+        <item>Tepung Beras</item>
+        <item>Telur</item>
+        <item>Margarin</item>
+        <item>Gula Merah</item>
+        <item>Santan Kelapa</item>
+        <item>Bawang Bombai</item>
+        <item>Jahe</item>
+        <item>Minyak Zaitun</item>
+        <item>Garam</item>
+        <item>Lada Hitam</item>
+        <item>Daging</item>
+        <item>Udang</item>
+        <item>Cumi-cumi</item>
+        <item>Roti Tawar</item>
+        <item>Saus Tiram</item>
+        <item>Cuka</item>
+        <item>Brokoli</item>
+        <item>Paprika</item>
+        <item>Daun Bawang</item>
+        <item>Kunyit</item>
+    </string-array>
+
+    <string-array name="data_bahan_kategori">
+        <item>Bahan Kering</item>
+        <item>Produk Hewani</item>
+        <item>Produk Susu</item>
+        <item>Pemanis</item>
+        <item>Produk Susu</item>
+        <item>Bumbu</item>
+        <item>Bumbu</item>
+        <item>Minyak</item>
+        <item>Bumbu</item>
+        <item>Bumbu</item>
+        <item>Produk Hewani</item>
+        <item>Produk Hewani</item>
+        <item>Produk Hewani</item>
+        <item>Bahan Kering</item>
+        <item>Saus</item>
+        <item>Bumbu</item>
+        <item>Sayuran</item>
+        <item>Sayuran</item>
+        <item>Sayuran</item>
+        <item>Bumbu</item>
+    </string-array>
+
+    <string-array name="data_bahan_image">
+        <item>https://raisa.aeonstore.id/wp-content/uploads/2023/04/3642870.jpg</item>
+        <item>https://res-5.cloudinary.com/dk0z4ums3/image/upload/v1706608491/attached_image/11-kandungan-telur-dan-manfaatnya-untuk-kesehatan.jpg</item>
+        <item>https://www.smart-tbk.com/wp-content/uploads/2025/06/Margarine-Industrial-Packed-Products.jpg</item>
+        <item>https://res-5.cloudinary.com/dk0z4ums3/image/upload/v1681161239/attached_image/5-manfaat-gula-merah-untuk-kesehatan-dan-faktanya.jpg</item>
+        <item>https://buckets.sasa.co.id/v1/AUTH_Assets/Assets/p/website/medias/page_medias/cab2b269efe8b8fdb99166102da482d5.png.webp</item>
+        <item>https://res-5.cloudinary.com/dk0z4ums3/image/upload/v1621837004/attached_image/berbagai-nutrisi-di-balik-manfaat-bombay.jpg</item>
+        <item>https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/06/27083019/Ketahui-Ini-Perbedaan-Jahe-Merah-dan-Jahe-Biasa.jpg</item>
+        <item>https://mcgrocer.com/cdn/shop/files/napolina-extra-virgin-olive-oil-750ml-41369744113902.jpg?v=1744094182</item>
+        <item>https://solvent-production.s3.amazonaws.com/media/images/products/2021/03/1234a.jpg</item>
+        <item>https://www.astronauts.id/blog/wp-content/uploads/2022/11/Tidak-Banyak-yang-Tahu-Ini-Manfaat-Lada-Hitam-Untuk-Kesehatan-Tubuh-1024x683.jpg</item>
+        <item>https://bbppkupang.bppsdmp.pertanian.go.id/storage/app/uploads/public/673/73d/765/67373d765630d891862945.jpg</item>
+        <item>https://image.idntimes.com/post/20250414/udangg-878868f0148cbbb4841ddf0ee25567c9.jpg</item>
+        <item>https://frozenjakarta.com/wp-content/uploads/2023/05/fresh-seafood-on-display-at-chow-20210906032006.jpg</item>
+        <item>https://www.tokomesin.com/wp-content/uploads/2017/12/roti-tawar-tepung-serbaguna-1.jpg</item>
+        <item>https://cdn-klik.klikindomaret.com/klik-catalog/product/20044599_1.jpg</item>
+        <item>https://img.lazcdn.com/g/p/ccf1e5cd15deea53cff1d7ee46819d19.jpg_960x960q80.jpg_.webp</item>
+        <item>https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/06/27044615/Ini-13-Manfaat-Brokoli-untuk-Kesehatan-yang-Perlu-Diketahui-.jpg</item>
+        <item>https://res-5.cloudinary.com/dk0z4ums3/image/upload/v1592801006/attached_image/ketahui-manfaat-paprika-untuk-kesehatan.jpg</item>
+        <item>https://image.idntimes.com/post/20230605/photo-1602769515559-e15133a7e992-74f859d3eac43fa485a5b58c05084ef2-7ab59b69fa6edc42311b789d66244274.jpeg</item>
+        <item>https://kelsumbersari.malangkota.go.id/wp-content/uploads/sites/91/2016/08/rimpang-kunyit.jpg</item>
+    </string-array>
+</resources>
